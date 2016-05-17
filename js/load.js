@@ -10,7 +10,7 @@ var Chatty = (function (chatty){
 
   var infoRequest = new XMLHttpRequest();
   infoRequest.addEventListener("load", loadChatty);
-  infoRequest.open("GET", "/data/startMsg.json");
+  infoRequest.open("GET", "data/startMsg.json");
   infoRequest.send();
 
   chatty.getLoadArray = function () {
